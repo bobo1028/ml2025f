@@ -153,7 +153,7 @@
   <!-- ------------------------------------------------>
   <div class="row hw12">
     <div class="col-md-12 twenty">
-      心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。
+      這次的作業使用了colab來學習如何訓練心臟肌肉，當使用不同的參數以及不同的模型時，所花的時間以及訓練出來的成果都有所不同，但要注意是否有出現過擬合(overfittimg)或是欠擬合(underfitting)的情況發生，在一開始訓練時，訓練怎麼樣都無法成功，但後來發現是壓縮檔案時，多了一層資料夾導致訓練時讀不到檔案，解決以後訓練的過程就非常順利，這次的訓練也是受益良多。
     </div>
   </div>
 
@@ -169,22 +169,22 @@
         </tr>
         <tr>
           <td rowspan="4" id="myTotal"></td>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox1"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox1" checked></td>
           <td id='m1'>4</td>
-          <td>Simple baseline - 描述</td>
+          <td>Simple baseline - 完成colab baseline的訓練並產生權重檔</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox2"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox2" checked></td>
           <td id='m2'>4</td>
-          <td>Medium baseline - 描述</td>
+          <td>Medium baseline - 調整並增加使用的訓練資料集(AICUP_training.json)</td>
         </tr>
         <tr>
           <td><input type="checkbox" class="flipswitch" id="myCheckbox3"></td>
           <td id='m3'>2</td>
-          <td>Strong baseline - 描述</td>
+          <td>Strong baseline - 使用其他模型(例如. Attn U-Net、UNETR、Swin UNETR...等)，對心臟資料進行訓練，並繳交colab程式碼</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox4" checked></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox4"></td>
           <td id='m4'>-10</td>
           <td>沒有寫100字心得</td>
         </tr>
@@ -196,9 +196,16 @@
   <!-- ------------------------------------------------>
   <div class="row hw12 bottomrow">
     <div class="col-md-12 twenty">
-      <video id="video1" style="width:100%;max-width:100%;" controls="">
-        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-      </video>
+      <table>
+        <tr>
+          <td> Simple Baseline Dice分數圖片
+          <img src="SimpleBaseLine.png" width="100%" height="560">
+        </tr>
+        <tr>
+          <td> Medium Baseline Dice分數圖片
+          <img src="MediumBaseLine.png" width="100%" height="560">
+        </tr>
+      </table>
     </div>
   </div>
 
@@ -252,3 +259,4 @@
 
 </body>
 </html>
+
